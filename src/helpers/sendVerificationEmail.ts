@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-export async function sendVerificationEmail(
+export default async function sendVerificationEmail(
   email: string,
   verifyCode: string
 ): Promise<ApiResponse> {
